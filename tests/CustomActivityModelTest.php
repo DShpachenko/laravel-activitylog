@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\Activitylog\Test;
+namespace DShpachenko\Activitylog\Test;
 
-use Spatie\Activitylog\Test\Models\Activity;
-use Spatie\Activitylog\Test\Models\InvalidActivity;
-use Spatie\Activitylog\Exceptions\InvalidConfiguration;
-use Spatie\Activitylog\Test\Models\AnotherInvalidActivity;
+use DShpachenko\Activitylog\Test\Models\Activity;
+use DShpachenko\Activitylog\Test\Models\InvalidActivity;
+use DShpachenko\Activitylog\Exceptions\InvalidConfiguration;
+use DShpachenko\Activitylog\Test\Models\AnotherInvalidActivity;
 
 class CustomActivityModelTest extends TestCase
 {

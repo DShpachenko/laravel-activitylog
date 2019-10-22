@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\Activitylog\Test\Models;
+namespace DShpachenko\Activitylog\Test\Models;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-use Spatie\Activitylog\Contracts\Activity as ActivityContract;
+use DShpachenko\Activitylog\Contracts\Activity as ActivityContract;
 
 class AnotherInvalidActivity implements ActivityContract
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\Activitylog\Traits;
+namespace DShpachenko\Activitylog\Traits;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Exceptions\CouldNotLogChanges;
+use DShpachenko\Activitylog\Exceptions\CouldNotLogChanges;
 
 trait DetectsChanges
 {

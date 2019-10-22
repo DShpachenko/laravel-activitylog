@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\Activitylog;
+namespace DShpachenko\Activitylog;
 
-use Spatie\String\Str;
+use DShpachenko\String\Str;
 use Illuminate\Support\Arr;
 use Illuminate\Auth\AuthManager;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Traits\Macroable;
 use Illuminate\Contracts\Config\Repository;
-use Spatie\Activitylog\Exceptions\CouldNotLogActivity;
-use Spatie\Activitylog\Contracts\Activity as ActivityContract;
+use DShpachenko\Activitylog\Exceptions\CouldNotLogActivity;
+use DShpachenko\Activitylog\Contracts\Activity as ActivityContract;
 
 class ActivityLogger
 {
@@ -23,10 +23,10 @@ class ActivityLogger
     /** @var string */
     protected $authDriver;
 
-    /** @var \Spatie\Activitylog\ActivityLogStatus */
+    /** @var \DShpachenko\Activitylog\ActivityLogStatus */
     protected $logStatus;
 
-    /** @var \Spatie\Activitylog\Contracts\Activity */
+    /** @var \DShpachenko\Activitylog\Contracts\Activity */
     protected $activity;
 
     public function __construct(AuthManager $auth, Repository $config, ActivityLogStatus $logStatus)

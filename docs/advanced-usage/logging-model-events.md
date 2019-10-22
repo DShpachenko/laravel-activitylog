@@ -3,7 +3,7 @@ title: Logging model events
 weight: 1
 ---
 
-The package can automatically log events such as when a model is created, updated and deleted.  To make this work all you need to do is let your model use the `Spatie\Activitylog\Traits\LogsActivity`-trait.
+The package can automatically log events such as when a model is created, updated and deleted.  To make this work all you need to do is let your model use the `DShpachenko\Activitylog\Traits\LogsActivity`-trait.
 
 As a bonus the package will also log the changed attributes for all these events when setting `$logAttributes` property on the model.
 
@@ -13,7 +13,7 @@ Here's an example:
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Traits\LogsActivity;
+use DShpachenko\Activitylog\Traits\LogsActivity;
 
 class NewsItem extends Model
 {
@@ -90,7 +90,7 @@ By default the package will log the `created`, `updated`, `deleted` events. You 
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Traits\LogsActivity;
+use DShpachenko\Activitylog\Traits\LogsActivity;
 
 class NewsItem extends Model
 {
@@ -107,7 +107,7 @@ By default the package will log `created`, `updated`, `deleted` in the descripti
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Traits\LogsActivity;
+use DShpachenko\Activitylog\Traits\LogsActivity;
 
 class NewsItem extends Model
 {
@@ -143,7 +143,7 @@ Specify `$logName` to make the model use another name than the default.
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Traits\LogsActivity;
+use DShpachenko\Activitylog\Traits\LogsActivity;
 
 class NewsItem extends Model
 {
@@ -159,7 +159,7 @@ If your model contains attributes whose change don't need to trigger an activity
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Traits\LogsActivity;
+use DShpachenko\Activitylog\Traits\LogsActivity;
 
 class NewsItem extends Model
 {
@@ -183,7 +183,7 @@ If you do not want to log every attribute in your `$logAttributes` variable, but
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Traits\LogsActivity;
+use DShpachenko\Activitylog\Traits\LogsActivity;
 
 class NewsItem extends Model
 {
@@ -205,7 +205,7 @@ If you would like to log an attribute of a directly related model, you may use d
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Traits\LogsActivity;
+use DShpachenko\Activitylog\Traits\LogsActivity;
 
 class NewsItem extends Model
 {
@@ -228,7 +228,7 @@ If you would like to log only the changes to a specific JSON objects sub-keys. Y
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Traits\LogsActivity;
+use DShpachenko\Activitylog\Traits\LogsActivity;
 
 class NewsItem extends Model
 {
@@ -305,7 +305,7 @@ Setting `$submitEmptyLogs` to `false` prevents the package from storing empty lo
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Traits\LogsActivity;
+use DShpachenko\Activitylog\Traits\LogsActivity;
 
 class NewsItem extends Model
 {
@@ -327,7 +327,7 @@ If you use wildcard logging, but do not want to log certain attributes, you can 
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Traits\LogsActivity;
+use DShpachenko\Activitylog\Traits\LogsActivity;
 
 class NewsItem extends Model
 {
@@ -400,8 +400,8 @@ In addition to the `tap()` method on `ActivityLogger` you can utilise the `tapAc
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Traits\LogsActivity;
-use Spatie\Activitylog\Contracts\Activity;
+use DShpachenko\Activitylog\Traits\LogsActivity;
+use DShpachenko\Activitylog\Contracts\Activity;
 
 class NewsItem extends Model
 {

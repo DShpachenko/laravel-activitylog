@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Activitylog\Test;
+namespace DShpachenko\Activitylog\Test;
 
 use Artisan;
 use Carbon\Carbon;
-use Spatie\Activitylog\Models\Activity;
+use DShpachenko\Activitylog\Models\Activity;
 
 class CleanActivitylogCommandTest extends TestCase
 {

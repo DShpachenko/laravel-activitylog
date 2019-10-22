@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Activitylog\Test;
+namespace DShpachenko\Activitylog\Test;
 
-use Spatie\Activitylog\Models\Activity;
-use Spatie\Activitylog\Test\Models\CustomDatabaseConnectionOnActivityModel;
+use DShpachenko\Activitylog\Models\Activity;
+use DShpachenko\Activitylog\Test\Models\CustomDatabaseConnectionOnActivityModel;
 
 class CustomDatabaseConnectionActivityModelTest extends TestCase
 {

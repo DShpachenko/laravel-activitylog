@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\Activitylog\Models;
+namespace DShpachenko\Activitylog\Models;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Jenssegers\Mongodb\Eloquent\Model;
 use Jenssegers\Mongodb\Query\Builder;
 use Jenssegers\Mongodb\Relations\MorphTo;
-use Spatie\Activitylog\Contracts\Activity as ActivityContract;
+use DShpachenko\Activitylog\Contracts\Activity as ActivityContract;
 
 class Activity extends Model implements ActivityContract
 {

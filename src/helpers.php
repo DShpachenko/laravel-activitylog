@@ -1,7 +1,7 @@
 <?php
 
-use Spatie\Activitylog\ActivityLogger;
-use Spatie\Activitylog\ActivityLogStatus;
+use DShpachenko\Activitylog\ActivityLogger;
+use DShpachenko\Activitylog\ActivityLogStatus;
 
 if (! function_exists('activity')) {
     function activity(string $logName = null): ActivityLogger

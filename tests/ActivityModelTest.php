@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Activitylog\Test;
+namespace DShpachenko\Activitylog\Test;
 
-use Spatie\Activitylog\Models\Activity;
-use Spatie\Activitylog\Test\Models\User;
-use Spatie\Activitylog\Test\Models\Article;
+use DShpachenko\Activitylog\Models\Activity;
+use DShpachenko\Activitylog\Test\Models\User;
+use DShpachenko\Activitylog\Test\Models\Article;
 use Illuminate\Database\Eloquent\Relations\Relation;
 
 class ActivityModelTest extends TestCase
@@ -93,8 +93,8 @@ class ActivityModelTest extends TestCase
     public function it_provides_a_scope_to_get_log_items_for_a_specific_morphmapped_causer()
     {
         Relation::morphMap([
-            'articles' => 'Spatie\Activitylog\Test\Models\Article',
-            'users' => 'Spatie\Activitylog\Test\Models\User',
+            'articles' => 'DShpachenko\Activitylog\Test\Models\Article',
+            'users' => 'DShpachenko\Activitylog\Test\Models\User',
         ]);
 
         $subject = Article::first();
@@ -119,8 +119,8 @@ class ActivityModelTest extends TestCase
     public function it_provides_a_scope_to_get_log_items_for_a_specific_morphmapped_subject()
     {
         Relation::morphMap([
-            'articles' => 'Spatie\Activitylog\Test\Models\Article',
-            'users' => 'Spatie\Activitylog\Test\Models\User',
+            'articles' => 'DShpachenko\Activitylog\Test\Models\Article',
+            'users' => 'DShpachenko\Activitylog\Test\Models\User',
         ]);
 
         $subject = Article::first();

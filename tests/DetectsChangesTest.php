@@ -1,18 +1,18 @@
 <?php
 
-namespace Spatie\Activitylog\Test;
+namespace DShpachenko\Activitylog\Test;
 
 use Carbon\Carbon;
 use Illuminate\Support\Arr;
-use Spatie\Activitylog\Models\Activity;
-use Spatie\Activitylog\Test\Models\User;
-use Spatie\Activitylog\Test\Models\Article;
-use Spatie\Activitylog\Traits\LogsActivity;
+use DShpachenko\Activitylog\Models\Activity;
+use DShpachenko\Activitylog\Test\Models\User;
+use DShpachenko\Activitylog\Test\Models\Article;
+use DShpachenko\Activitylog\Traits\LogsActivity;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class DetectsChangesTest extends TestCase
 {
-    /** @var \Spatie\Activitylog\Test\Models\Article|\Spatie\Activitylog\Traits\LogsActivity */
+    /** @var \DShpachenko\Activitylog\Test\Models\Article|\DShpachenko\Activitylog\Traits\LogsActivity */
     protected $article;
 
     public function setUp(): void

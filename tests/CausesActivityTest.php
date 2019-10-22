@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\Activitylog\Test;
+namespace DShpachenko\Activitylog\Test;
 
-use Spatie\Activitylog\Test\Models\User;
+use DShpachenko\Activitylog\Test\Models\User;
 
 class CausesActivityTest extends TestCase
 {

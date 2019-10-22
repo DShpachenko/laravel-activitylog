@@ -1,16 +1,16 @@
 <?php
 
-namespace Spatie\Activitylog\Test;
+namespace DShpachenko\Activitylog\Test;
 
 use CreateActivityLogTable;
 use Illuminate\Support\Arr;
 use Illuminate\Encryption\Encrypter;
 use Illuminate\Support\Facades\Schema;
-use Spatie\Activitylog\Models\Activity;
-use Spatie\Activitylog\Test\Models\User;
+use DShpachenko\Activitylog\Models\Activity;
+use DShpachenko\Activitylog\Test\Models\User;
 use Illuminate\Database\Schema\Blueprint;
-use Spatie\Activitylog\Test\Models\Article;
-use Spatie\Activitylog\ActivitylogServiceProvider;
+use DShpachenko\Activitylog\Test\Models\Article;
+use DShpachenko\Activitylog\ActivitylogServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 abstract class TestCase extends OrchestraTestCase

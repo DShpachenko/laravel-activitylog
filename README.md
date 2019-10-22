@@ -16,7 +16,7 @@ Here's a demo of how you can use it:
 activity()->log('Look, I logged something');
 ```
 
-You can retrieve all activity using the `Spatie\Activitylog\Models\Activity` model.
+You can retrieve all activity using the `DShpachenko\Activitylog\Models\Activity` model.
 
 ```php
 Activity::all();
@@ -88,7 +88,7 @@ The package will automatically register itself.
 
 You can publish the migration with:
 ```bash
-php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="DShpachenko\Activitylog\ActivitylogServiceProvider" --tag="migrations"
 ```
 
 *Note*: The default migration assumes you are using integers for your model IDs. If you are using UUIDs, or some other format, adjust the format of the subject_id and causer_id fields in the published migration before continuing.
@@ -102,7 +102,7 @@ php artisan migrate
 
 You can optionally publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="config"
+php artisan vendor:publish --provider="DShpachenko\Activitylog\ActivitylogServiceProvider" --tag="config"
 ```
 
 This is the contents of the published config file:
@@ -140,10 +140,10 @@ return [
 
     /*
      * This model will be used to log activity.
-     * It should be implements the Spatie\Activitylog\Contracts\Activity interface
+     * It should be implements the DShpachenko\Activitylog\Contracts\Activity interface
      * and extend Illuminate\Database\Eloquent\Model.
      */
-    'activity_model' => \Spatie\Activitylog\Models\Activity::class,
+    'activity_model' => \DShpachenko\Activitylog\Models\Activity::class,
 
     /*
      * This is the name of the table that will be created by the migration and
@@ -187,7 +187,7 @@ If you discover any security related issues, please email freek@spatie.be instea
 
 You're free to use this package, but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
 
-Our address is: Spatie, Samberstraat 69D, 2060 Antwerp, Belgium.
+Our address is: DShpachenko, Samberstraat 69D, 2060 Antwerp, Belgium.
 
 We publish all received postcards [on our company website](https://spatie.be/en/opensource/postcards).
 
@@ -199,7 +199,7 @@ We publish all received postcards [on our company website](https://spatie.be/en/
 
 ## Support us
 
-Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
+DShpachenko is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
 
 Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/spatie). 
 All pledges will be dedicated to allocating workforce on maintenance and new awesome stuff.

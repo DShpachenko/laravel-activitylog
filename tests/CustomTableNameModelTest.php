@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Activitylog\Test;
+namespace DShpachenko\Activitylog\Test;
 
-use Spatie\Activitylog\Models\Activity;
-use Spatie\Activitylog\Test\Models\CustomTableNameOnActivityModel;
+use DShpachenko\Activitylog\Models\Activity;
+use DShpachenko\Activitylog\Test\Models\CustomTableNameOnActivityModel;
 
 class CustomTableNameModelTest extends TestCase
 {

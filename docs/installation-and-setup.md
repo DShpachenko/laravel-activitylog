@@ -13,7 +13,7 @@ The package will automatically register the service provider.
 
 You can publish the migration with:
 ```bash
-php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="DShpachenko\Activitylog\ActivitylogServiceProvider" --tag="migrations"
 ```
 
 After the migration has been published you can create the `activity_log` table by running the migrations:
@@ -24,7 +24,7 @@ php artisan migrate
 
 You can optionally publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Spatie\Activitylog\ActivitylogServiceProvider" --tag="config"
+php artisan vendor:publish --provider="DShpachenko\Activitylog\ActivitylogServiceProvider" --tag="config"
 ```
 
 This is the contents of the published config file:
@@ -62,10 +62,10 @@ return [
 
     /*
      * This model will be used to log activity.
-     * It should be implements the Spatie\Activitylog\Contracts\Activity interface
+     * It should be implements the DShpachenko\Activitylog\Contracts\Activity interface
      * and extend Illuminate\Database\Eloquent\Model.
      */
-    'activity_model' => \Spatie\Activitylog\Models\Activity::class,
+    'activity_model' => \DShpachenko\Activitylog\Models\Activity::class,
 
     /*
      * This is the name of the table that will be created by the migration and

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Activitylog\Contracts;
+namespace DShpachenko\Activitylog\Contracts;
 
 use Illuminate\Support\Collection;
 use Jenssegers\Mongodb\Eloquent\Model;

@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\Activitylog\Traits;
+namespace DShpachenko\Activitylog\Traits;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Spatie\Activitylog\ActivityLogger;
+use DShpachenko\Activitylog\ActivityLogger;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Spatie\Activitylog\ActivitylogServiceProvider;
+use DShpachenko\Activitylog\ActivitylogServiceProvider;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 trait LogsActivity

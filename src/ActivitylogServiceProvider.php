@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\Activitylog;
+namespace DShpachenko\Activitylog;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
-use Spatie\Activitylog\Contracts\Activity;
-use Spatie\Activitylog\Exceptions\InvalidConfiguration;
-use Spatie\Activitylog\Models\Activity as ActivityModel;
-use Spatie\Activitylog\Contracts\Activity as ActivityContract;
+use DShpachenko\Activitylog\Contracts\Activity;
+use DShpachenko\Activitylog\Exceptions\InvalidConfiguration;
+use DShpachenko\Activitylog\Models\Activity as ActivityModel;
+use DShpachenko\Activitylog\Contracts\Activity as ActivityContract;
 
 class ActivitylogServiceProvider extends ServiceProvider
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Activitylog\Test\Models;
+namespace DShpachenko\Activitylog\Test\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Traits\CausesActivity;
+use DShpachenko\Activitylog\Traits\CausesActivity;
 use Illuminate\Contracts\Auth\Authenticatable;
 
 class User extends Model implements Authenticatable
